@@ -1,0 +1,339 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/* line 2, ../sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 2, ../sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 2, ../sass/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 2, ../sass/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 2, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 2, ../sass/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* line 2, ../sass/_normalize.scss */
+a {
+  background: transparent; }
+
+/* line 2, ../sass/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 2, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 2, ../sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 2, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+/* line 2, ../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 2, ../sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 2, ../sass/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 2, ../sass/_normalize.scss */
+sup {
+  top: -.5em; }
+
+/* line 2, ../sass/_normalize.scss */
+sub {
+  bottom: -.25em; }
+
+/* line 2, ../sass/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 2, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 2, ../sass/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 2, ../sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 2, ../sass/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 2, ../sass/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 2, ../sass/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 2, ../sass/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/* line 2, ../sass/_normalize.scss */
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 3, ../sass/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 3, ../sass/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 3, ../sass/_normalize.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 3, ../sass/_normalize.scss */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 3, ../sass/_normalize.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 3, ../sass/_normalize.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 3, ../sass/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+/* line 3, ../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 3, ../sass/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* line 3, ../sass/_normalize.scss */
+b, strong, optgroup {
+  font-weight: 700; }
+
+/* line 3, ../sass/_normalize.scss */
+pre, textarea {
+  overflow: auto; }
+
+/* line 3, ../sass/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner, legend {
+  border: 0;
+  padding: 0; }
+
+/* line 5, ../sass/_normalize.scss */
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+/* line 13, ../sass/_normalize.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 17, ../sass/_normalize.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 22, ../sass/_normalize.scss */
+svg {
+  max-height: 100%; }
+
+/* ==============================================================================================================
+                           END OF NORMALIZE 
+   =========================================================================================================== */
+/* ==============================================================================================================
+                           SITE WIDE HEADING STYLES
+   =========================================================================================================== */
+/* line 5, ../sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  letter-spacing: -1px; }
+
+/* line 10, ../sass/_typography.scss */
+h1 {
+  font-size: 4vw; }
+
+/* line 15, ../sass/_typography.scss */
+h2 {
+  font-size: 3vw; }
+/* line 17, ../sass/_typography.scss */
+.inner-container h2 {
+  text-transform: uppercase; }
+
+/* line 22, ../sass/_typography.scss */
+h3 {
+  font-size: 2rem; }
+
+/* line 26, ../sass/_typography.scss */
+h4 {
+  font-size: 1.75rem; }
+
+/* line 30, ../sass/_typography.scss */
+h5 {
+  font-size: 1.5rem; }
+
+/* line 34, ../sass/_typography.scss */
+h6 {
+  font-size: 1.25rem; }
+
+/* ==============================================================================================================
+                                                   Main site styles
+   =========================================================================================================== */
+/* line 8, ../sass/_main.scss */
+body {
+  font-family: 'Josefin Slab', serif;
+  font-size: 10px;
+  background: #f3efe6;
+  color: #e19a7a; }
+
+/* line 15, ../sass/_main.scss */
+a {
+  transition: all 0.4s;
+  font-weight: 700;
+  text-decoration: none;
+  color: #e19a7a;
+  vertical-align: middle; }
+/* line 21, ../sass/_main.scss */
+a:hover {
+  color: #bc7456; }
+
+/* ==============================================================================================================
+                           header styling 
+   =========================================================================================================== */
+/* line 29, ../sass/_main.scss */
+header {
+  background: #f3efe6;
+  width: 300px;
+  height: 100vh;
+  text-align: center;
+  float: left;
+  z-index: 100;
+  box-shadow: 6px 0px 11px 0px rgba(67, 56, 32, 0.66);
+  padding: 25px 0; }
+/* line 38, ../sass/_main.scss */
+header footer {
+  border-top: 1px dotted #e19a7a;
+  border-bottom: 1px dotted #e19a7a;
+  font-size: .8rem; }
+/* line 42, ../sass/_main.scss */
+header footer a {
+  font-weight: 700; }
+/* line 44, ../sass/_main.scss */
+header footer a:hover {
+  text-decoration: underline; }
+
+/* line 51, ../sass/_main.scss */
+.logo {
+  margin-bottom: 25px; }
+
+/* line 56, ../sass/_main.scss */
+nav ul {
+  margin: 0 auto 25px;
+  padding: 0;
+  font-size: 1.5em;
+  text-transform: uppercase; }
+/* line 62, ../sass/_main.scss */
+nav li {
+  padding: 25px 0;
+  background: url("../img/nav-frames.svg") center center no-repeat; }
+
+/* ==============================================================================================================
+                           main body styling 
+   =========================================================================================================== */
+/* line 72, ../sass/_main.scss */
+.container {
+  max-width: 100%;
+  height: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 40px;
+  margin-left: 300px;
+  overflow: hidden; }
+
+/* line 83, ../sass/_main.scss */
+svg.frame {
+  width: 100%; }
+/* line 85, ../sass/_main.scss */
+svg.frame .frame-lines {
+  fill: none;
+  stroke: #E19A7A;
+  stroke-width: 0.5623;
+  stroke-miterlimit: 10; }
+
+/* line 92, ../sass/_main.scss */
+.inner-container {
+  margin: 0 auto;
+  text-align: center; }
+/* line 95, ../sass/_main.scss */
+.inner-container p {
+  font-size: 1.2vw; }
+
+/* line 100, ../sass/_main.scss */
+.divider {
+  width: 60%;
+  margin: 0 auto; }
+/* line 103, ../sass/_main.scss */
+.divider .lines {
+  fill: #e19a7a; }
+
+/* ==============================================================================================================
+                           Media Queries 
+   =========================================================================================================== */
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

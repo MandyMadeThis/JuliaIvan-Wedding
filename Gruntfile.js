@@ -71,10 +71,9 @@ module.exports = function(grunt) {
             options: {
                 browsers: ['last 3 version']
             },
-            your_target: {
-                src: 'css/style.css',
-                dest: 'css/style.css',
-            },
+           no_dest: {
+                src: 'css/style.css' 
+              },
         },
 
     });
@@ -90,6 +89,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['sass:dev', 'concat', 'watch']);
 
     // type "grunt prod"  into the terminal for production .
-    grunt.registerTask('prod', ['sass:prod', 'autoprefixer', 'uglify']);
+    grunt.registerTask('prod', ['sass:prod', 'uglify', 'autoprefixer']);
 
 };
