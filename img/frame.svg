@@ -2,14 +2,13 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="227.4px" height="184.8px" viewBox="-21.4 21.2 227.4 184.8" style="enable-background:new -21.4 21.2 227.4 184.8;"
-	 xml:space="preserve">
+	 width="300px" height="200px" viewBox="0 0 300 200" style="enable-background:new 0 0 300 200;" xml:space="preserve">
 <style type="text/css">
 <![CDATA[
-	.st0{fill:none;stroke:#E19A7A;stroke-width:0.5623;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#E29B7A;stroke-width:0.5623;stroke-miterlimit:10;}
 ]]>
 </style>
-<path class="st0" d="M200.2,21.5H-15.6c0,3-2.4,5.5-5.5,5.5l0,173.2c3,0,5.5,2.4,5.5,5.5h215.8c0-3,2.4-5.5,5.5-5.5V27
-	C202.7,27,200.2,24.6,200.2,21.5z"/>
-<rect x="-19.2" y="23.1" class="st0" width="223" height="181.1"/>
+<path class="st0" d="M279.8,2.5H20.2c0,3.2-2.9,5.8-6.6,5.8v183.4c3.7,0,6.6,2.5,6.6,5.8h259.6c0-3.2,2.9-5.8,6.6-5.8V8.3
+	C282.8,8.3,279.8,5.8,279.8,2.5z"/>
+<rect x="15.9" y="4.1" class="st0" width="268.3" height="191.7"/>
 </svg>

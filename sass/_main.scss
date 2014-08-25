@@ -28,13 +28,15 @@ a {
    =========================================================================================================== */
 header {
   background: $cream;
-  width: 300px;
-  height: 100vh;
-  text-align: center;
-  float: left;
-  z-index: 100;
   box-shadow: $box-shadow;
+  height: 100%;
+  height: 100vh;
+  top: 0px;
+  width: 300px;
   padding: 25px 0;
+  position: fixed;
+  text-align: center;
+  z-index: 100;
   footer{
     border-top: 1px dotted $rose;
     border-bottom: 1px dotted $rose;
@@ -53,45 +55,53 @@ header {
 }
 
 nav {
-    ul {
-        margin: 0 auto 25px;
-        padding: 0;
-        font-size: 1.5em;
-        text-transform: uppercase;
-    }
-    li {
-        padding: 25px 0;
-        background:url('../img/nav-frames.svg') center center no-repeat;
-    }
-    
+  ul {
+      margin: 0 auto 25px;
+      padding: 0;
+      font-size: 1.5em;
+      text-transform: uppercase;
+  }
+  li {
+      padding: 8% 0;
+      background:url('../img/nav-frames.svg') center center no-repeat;
+  }
+  a {
+    padding: 2% 22%;
+  }
 }
-
 /* ==============================================================================================================
                            main body styling 
    =========================================================================================================== */
 .container {
-    max-width: 100%;
-    height: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 40px;
-    margin-left: 300px;
-    overflow: hidden;
-    // float: left;
+  margin-left: 300px;
+  min-height: 100%;
+  height: 100vh;
+  padding: 3%;
+  overflow: hidden;
+  background:transparent url('../img/frame.svg') center center no-repeat;
+  background-size: cover;
 }
 
-svg.frame{
-  width: 100%;
-  .frame-lines{
-    fill:none;
-    stroke:#E19A7A;
-    stroke-width:0.5623;
-    stroke-miterlimit:10;
-  }
+.wrapper {
+  margin-left: 300px;
+  min-height: 100%;
+  height: 100vh;
 }
-.inner-container{
-  margin: 0 auto;
+
+.center{
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+}
+
+.inner-container{
+  margin: 20px auto;
+  text-align: center;
+  width: 95%;
+  position: relative;
+  padding: 5%;
+  
   p{
   font-size: 1.2vw;
   }
@@ -104,6 +114,18 @@ svg.frame{
     fill: $rose;
   }
 }
-footer {
-   
+
+.map {
+  position: relative;
+  padding-bottom: 69%; 
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

@@ -5,17 +5,17 @@
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
     letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
 h1 {
   font-size:  4vw;
-
 }
 
 h2 {
   font-size: 3vw;
   .inner-container & {
-    text-transform: uppercase;
+    margin-bottom: 0;
   }
 }
 

@@ -202,9 +202,10 @@ svg {
 /* line 5, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  text-transform: uppercase; }
 
-/* line 10, ../sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 h1 {
   font-size: 4vw; }
 
@@ -213,7 +214,7 @@ h2 {
   font-size: 3vw; }
 /* line 17, ../sass/_typography.scss */
 .inner-container h2 {
-  text-transform: uppercase; }
+  margin-bottom: 0; }
 
 /* line 22, ../sass/_typography.scss */
 h3 {
@@ -239,18 +240,18 @@ body {
   font-family: 'Josefin Slab', serif;
   font-size: 10px;
   background: #f3efe6;
-  color: #e19a7a; }
+  color: #E19A7A; }
 
 /* line 15, ../sass/_main.scss */
 a {
   transition: all 0.4s;
   font-weight: 700;
   text-decoration: none;
-  color: #e19a7a;
+  color: #E19A7A;
   vertical-align: middle; }
 /* line 21, ../sass/_main.scss */
 a:hover {
-  color: #bc7456; }
+  color: #BC7456; }
 
 /* ==============================================================================================================
                            header styling 
@@ -258,78 +259,104 @@ a:hover {
 /* line 29, ../sass/_main.scss */
 header {
   background: #f3efe6;
-  width: 300px;
-  height: 100vh;
-  text-align: center;
-  float: left;
-  z-index: 100;
   box-shadow: 6px 0px 11px 0px rgba(67, 56, 32, 0.66);
-  padding: 25px 0; }
-/* line 38, ../sass/_main.scss */
+  height: 100%;
+  height: 100vh;
+  top: 0px;
+  width: 300px;
+  padding: 25px 0;
+  position: fixed;
+  text-align: center;
+  z-index: 100; }
+/* line 40, ../sass/_main.scss */
 header footer {
-  border-top: 1px dotted #e19a7a;
-  border-bottom: 1px dotted #e19a7a;
+  border-top: 1px dotted #E19A7A;
+  border-bottom: 1px dotted #E19A7A;
   font-size: .8rem; }
-/* line 42, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 header footer a {
   font-weight: 700; }
-/* line 44, ../sass/_main.scss */
+/* line 46, ../sass/_main.scss */
 header footer a:hover {
   text-decoration: underline; }
 
-/* line 51, ../sass/_main.scss */
+/* line 53, ../sass/_main.scss */
 .logo {
   margin-bottom: 25px; }
 
-/* line 56, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 nav ul {
   margin: 0 auto 25px;
   padding: 0;
   font-size: 1.5em;
   text-transform: uppercase; }
-/* line 62, ../sass/_main.scss */
+/* line 64, ../sass/_main.scss */
 nav li {
-  padding: 25px 0;
+  padding: 8% 0;
   background: url("../img/nav-frames.svg") center center no-repeat; }
+/* line 68, ../sass/_main.scss */
+nav a {
+  padding: 2% 22%; }
 
 /* ==============================================================================================================
                            main body styling 
    =========================================================================================================== */
-/* line 72, ../sass/_main.scss */
+/* line 75, ../sass/_main.scss */
 .container {
-  max-width: 100%;
-  height: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 40px;
   margin-left: 300px;
-  overflow: hidden; }
+  min-height: 100%;
+  height: 100vh;
+  padding: 3%;
+  overflow: hidden;
+  background: transparent url("../img/frame.svg") center center no-repeat;
+  background-size: cover; }
 
-/* line 83, ../sass/_main.scss */
-svg.frame {
-  width: 100%; }
 /* line 85, ../sass/_main.scss */
-svg.frame .frame-lines {
-  fill: none;
-  stroke: #E19A7A;
-  stroke-width: 0.5623;
-  stroke-miterlimit: 10; }
+.wrapper {
+  margin-left: 300px;
+  min-height: 100%;
+  height: 100vh; }
 
-/* line 92, ../sass/_main.scss */
-.inner-container {
-  margin: 0 auto;
+/* line 91, ../sass/_main.scss */
+.center {
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center; }
-/* line 95, ../sass/_main.scss */
+
+/* line 98, ../sass/_main.scss */
+.inner-container {
+  margin: 20px auto;
+  text-align: center;
+  width: 95%;
+  position: relative;
+  padding: 5%; }
+/* line 105, ../sass/_main.scss */
 .inner-container p {
   font-size: 1.2vw; }
 
-/* line 100, ../sass/_main.scss */
+/* line 110, ../sass/_main.scss */
 .divider {
   width: 60%;
   margin: 0 auto; }
-/* line 103, ../sass/_main.scss */
+/* line 113, ../sass/_main.scss */
 .divider .lines {
-  fill: #e19a7a; }
+  fill: #E19A7A; }
+
+/* line 118, ../sass/_main.scss */
+.map {
+  position: relative;
+  padding-bottom: 69%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden; }
+/* line 124, ../sass/_main.scss */
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /* ==============================================================================================================
                            Media Queries 
@@ -337,3 +364,5 @@ svg.frame .frame-lines {
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+
+/*# sourceMappingURL=style.css.map */
