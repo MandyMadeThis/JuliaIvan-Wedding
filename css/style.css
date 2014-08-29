@@ -203,32 +203,36 @@ svg {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   letter-spacing: -1px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: lighter; }
 
-/* line 11, ../sass/_typography.scss */
+/* line 12, ../sass/_typography.scss */
 h1 {
   font-size: 4vw; }
+/* line 14, ../sass/_typography.scss */
+h1.vert-center {
+  margin-top: 30%; }
 
-/* line 15, ../sass/_typography.scss */
+/* line 19, ../sass/_typography.scss */
 h2 {
   font-size: 3vw; }
-/* line 17, ../sass/_typography.scss */
+/* line 21, ../sass/_typography.scss */
 .inner-container h2 {
   margin-bottom: 0; }
 
-/* line 22, ../sass/_typography.scss */
+/* line 26, ../sass/_typography.scss */
 h3 {
   font-size: 2rem; }
 
-/* line 26, ../sass/_typography.scss */
+/* line 30, ../sass/_typography.scss */
 h4 {
   font-size: 1.75rem; }
 
-/* line 30, ../sass/_typography.scss */
+/* line 34, ../sass/_typography.scss */
 h5 {
   font-size: 1.5rem; }
 
-/* line 34, ../sass/_typography.scss */
+/* line 38, ../sass/_typography.scss */
 h6 {
   font-size: 1.25rem; }
 
@@ -273,37 +277,36 @@ header footer {
   border-top: 1px dotted #E19A7A;
   border-bottom: 1px dotted #E19A7A;
   font-size: .8rem;
-  position: relative;
-  top: 15%; }
-/* line 46, ../sass/_main.scss */
+  margin-top: 1%; }
+/* line 45, ../sass/_main.scss */
 header footer a {
   font-weight: 700; }
-/* line 48, ../sass/_main.scss */
+/* line 47, ../sass/_main.scss */
 header footer a:hover {
   text-decoration: underline; }
 
-/* line 55, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 .logo {
   margin-bottom: 25px; }
 
-/* line 60, ../sass/_main.scss */
+/* line 59, ../sass/_main.scss */
 nav ul {
   margin: 0 auto 25px;
   padding: 0;
   font-size: 1.5em;
   text-transform: uppercase; }
-/* line 66, ../sass/_main.scss */
+/* line 65, ../sass/_main.scss */
 nav li {
   padding: 8% 0;
   background: url("../img/nav-frames.svg") center center no-repeat; }
-/* line 70, ../sass/_main.scss */
+/* line 69, ../sass/_main.scss */
 nav a {
   padding: 2% 22%; }
 
 /* ==============================================================================================================
                            main body styling 
    =========================================================================================================== */
-/* line 77, ../sass/_main.scss */
+/* line 76, ../sass/_main.scss */
 .container {
   margin-left: 300px;
   min-height: 100%;
@@ -313,51 +316,54 @@ nav a {
   background: transparent url("../img/frame.svg") center center no-repeat;
   background-size: cover; }
 
-/* line 87, ../sass/_main.scss */
+/* line 86, ../sass/_main.scss */
 .wrapper {
   margin-left: 300px;
   min-height: 100%;
   height: 100vh;
   padding: 1%; }
 
-/* line 94, ../sass/_main.scss */
+/* line 93, ../sass/_main.scss */
 .center {
-  margin-top: 30%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  display: block;
   text-align: center; }
 
-/* line 101, ../sass/_main.scss */
+/* line 99, ../sass/_main.scss */
 .inner-container {
   margin: 20px auto;
   text-align: center;
   width: 95%;
   position: relative;
   padding: 5%; }
-/* line 108, ../sass/_main.scss */
+/* line 106, ../sass/_main.scss */
 .inner-container p {
   font-size: 1.2vw; }
 
-/* line 113, ../sass/_main.scss */
+/* line 111, ../sass/_main.scss */
 p.spacing {
   margin-top: 5%; }
 
-/* line 117, ../sass/_main.scss */
+/* line 115, ../sass/_main.scss */
+.caps {
+  text-transform: uppercase; }
+
+/* line 119, ../sass/_main.scss */
 .divider {
   width: 60%;
   margin: 0 auto; }
-/* line 120, ../sass/_main.scss */
+/* line 122, ../sass/_main.scss */
 .divider .lines {
   fill: #E19A7A; }
 
-/* line 125, ../sass/_main.scss */
+/* line 127, ../sass/_main.scss */
 .map {
   position: relative;
   padding-bottom: 69%;
   padding-top: 15px;
   height: 0;
   overflow: hidden; }
-/* line 131, ../sass/_main.scss */
+/* line 133, ../sass/_main.scss */
 .map iframe {
   position: absolute;
   top: 0;
@@ -365,11 +371,11 @@ p.spacing {
   width: 100%;
   height: 100%; }
 
-/* line 141, ../sass/_main.scss */
+/* line 143, ../sass/_main.scss */
 #instafeed {
   text-align: center; }
 
-/* line 145, ../sass/_main.scss */
+/* line 147, ../sass/_main.scss */
 .img-border {
   border: 1px dotted #E19A7A;
   border-radius: 50%;
@@ -379,21 +385,21 @@ p.spacing {
   position: relative;
   margin: 1%; }
 
-/* line 156, ../sass/_main.scss */
+/* line 158, ../sass/_main.scss */
 .fancybox img {
   border-radius: 50%;
   border: 3px solid #E19A7A;
   display: block;
   width: 270px; }
 
-/* line 165, ../sass/_main.scss */
+/* line 167, ../sass/_main.scss */
 .profile {
   width: 60px;
   padding: 3px;
   border: 1px dotted #E19A7A;
   margin-right: 8px; }
 
-/* line 172, ../sass/_main.scss */
+/* line 174, ../sass/_main.scss */
 .caption {
   position: relative;
   top: -67px;
@@ -401,7 +407,7 @@ p.spacing {
   max-width: 88%;
   margin: 0; }
 
-/* line 180, ../sass/_main.scss */
+/* line 182, ../sass/_main.scss */
 button {
   border: none;
   background: #f3efe6 url("../img/button-frame.svg") center center no-repeat;
@@ -413,6 +419,109 @@ button {
   outline: none;
   background-size: 105%;
   vertical-align: middle; }
+
+/* line 196, ../sass/_main.scss */
+form, fieldset, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none; }
+
+/* line 200, ../sass/_main.scss */
+.form-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3% 0 0 0;
+  background: #fafafa;
+  background: url(../img/paper.jpg);
+  border: 1px solid #fafafa;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset; }
+/* line 209, ../sass/_main.scss */
+.form-container:before, .form-container:after {
+  content: "";
+  position: absolute;
+  z-index: -2; }
+
+/* line 217, ../sass/_main.scss */
+.paper-curl {
+  border-radius: 0 0 120px 120px / 0 0 6px 6px; }
+/* line 219, ../sass/_main.scss */
+.paper-curl:before, .paper-curl:after {
+  bottom: 12px;
+  width: 50%;
+  height: 55%;
+  max-width: 200px;
+  max-height: 100px;
+  box-shadow: 0 8px 14px rgba(31, 31, 31, 0.5); }
+/* line 228, ../sass/_main.scss */
+.paper-curl:before {
+  left: 6px;
+  transform: skew(-8deg);
+  transform: rotate(-3deg); }
+/* line 233, ../sass/_main.scss */
+.paper-curl:after {
+  right: 6px;
+  transform: skew(8deg);
+  transform: rotate(3deg); }
+
+/* line 239, ../sass/_main.scss */
+label {
+  clear: left;
+  display: block;
+  float: left;
+  font-size: 1.4rem;
+  margin: 10px 10px 40px 4%;
+  text-align: right; }
+
+/* line 248, ../sass/_main.scss */
+input, textarea {
+  background: none;
+  width: 80%;
+  padding: 10px 5px 0;
+  float: left;
+  margin: -20px 0 0 0;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 1.8rem;
+  color: #000F55; }
+
+/* line 259, ../sass/_main.scss */
+input {
+  border-bottom: 1px dotted #E19A7A; }
+
+/* line 263, ../sass/_main.scss */
+input[type="submit"] {
+  font-family: 'Josefin Slab', serif;
+  color: #E19A7A;
+  width: 20%; }
+
+/* line 269, ../sass/_main.scss */
+input[name="message"] {
+  border-bottom: none;
+  margin-bottom: 2%; }
+
+/* line 274, ../sass/_main.scss */
+.anti-spam {
+  font-size: 1rem;
+  float: left; }
+
+/* line 278, ../sass/_main.scss */
+.anti-spam-answer {
+  width: 20%; }
+
+/* line 281, ../sass/_main.scss */
+.clear {
+  width: 100%;
+  display: block; }
+
+/* line 285, ../sass/_main.scss */
+button[type="submit"] {
+  padding: 3% 4%;
+  display: block;
+  font-size: 1.6rem;
+  margin: 0px 0 25px 80%;
+  border-bottom: none;
+  background: url(../img/submit-top.svg) top center no-repeat, url(../img/submit-bottom.svg) bottom center no-repeat; }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 /* line 2, ../sass/_fancybox.scss */

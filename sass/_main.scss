@@ -41,8 +41,7 @@ header {
     border-top: 1px dotted $rose;
     border-bottom: 1px dotted $rose;
     font-size: .8rem;
-    position: relative;
-    top: 15%;
+    margin-top: 1%;
     a{
       font-weight: 700;
       &:hover{
@@ -92,10 +91,9 @@ nav {
 }
 
 .center{
-  margin-top: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+ margin: 0 auto;
+ display: block;
+ text-align: center;
 }
 
 .inner-container{
@@ -112,6 +110,10 @@ nav {
 
 p.spacing{
   margin-top: 5%;
+}
+
+.caps{
+  text-transform: uppercase;
 }
 
 .divider{
@@ -188,4 +190,105 @@ button {
   outline: none;
   background-size: 105%;
   vertical-align: middle;
+}
+
+// contact form
+ form, fieldset, input, textarea {
+  margin: 0; padding: 0; border: 0; outline: none;
+}
+
+.form-container {
+  position: relative;
+  width: 80%; 
+  margin: 0 auto; 
+  padding: 3% 0 0 0;
+  background: $white-light;
+  background: url(../img/paper.jpg); 
+  border: 1px solid $white-light;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px $white-dark inset;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -2;
+    }
+}
+
+.paper-curl {
+  border-radius: 0 0 120px 120px / 0 0 6px 6px;
+  &:before,
+  &:after {
+    bottom: 12px;
+    width: 50%;
+    height: 55%;
+    max-width: 200px;
+    max-height: 100px;
+    box-shadow: 0 8px 14px rgba(31, 31, 31, 0.5);
+  }
+  &:before {
+    left: 6px;
+    transform: skew(-8deg);
+    transform: rotate(-3deg);
+  }
+  &:after {
+    right: 6px;
+    transform: skew(8deg);
+    transform: rotate(3deg);
+  }
+}
+label {
+  clear: left;
+  display: block;
+  float: left;
+  font-size: 1.4rem;
+  margin: 10px 10px 40px 4%;
+  text-align: right;
+}
+
+input, textarea {
+background: none;
+width: 80%;
+padding: 10px 5px 0;
+float: left;
+margin: -20px 0 0 0;
+font-family: 'Shadows Into Light Two', cursive;
+font-size: 1.8rem;
+color: $ink;
+}
+
+input {
+  border-bottom: 1px dotted #E19A7A;
+}
+
+input[type="submit"] {
+  font-family: 'Josefin Slab', serif;
+  color: $rose;
+  width: 20%;
+}
+
+input[name="message"]{
+  border-bottom: none;
+  margin-bottom: 2%;
+}
+
+.anti-spam {
+  font-size: 1rem;
+  float: left;
+}
+.anti-spam-answer{
+  width: 20%;
+}
+.clear {
+  width: 100%;
+  display: block;
+}
+button[type="submit"] {
+  padding: 3% 4%;
+  display: block;
+  font-size: 1.6rem;
+  margin: 0px 0 25px 80%;
+  border-bottom: none;
+  background: 
+    url(../img/submit-top.svg) top center no-repeat, 
+    url(../img/submit-bottom.svg) bottom center no-repeat;
 }

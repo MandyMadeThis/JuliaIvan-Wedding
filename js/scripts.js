@@ -6,9 +6,9 @@ $(function() {
           clientId: '876cebe25a23446fa882f160f4327a9b',
           useHttp: true, 
           sortBy: 'most-recent',
-          resolution: 'low_resolution',
-          template: '<div class="img-border"><a class="fancybox" rel="gallery" title="{{caption}}" data-photo="{{model.user.profile_picture}}"href="{{model.images.standard_resolution.url}}"><img src="{{image}}" /></a></div>',
-
+          resolution: 'standard_resolution',
+          template: '<div class="img-border"><a class="fancybox" rel="gallery" title="{{caption}}" data-photo="{{model.user.profile_picture}} "href="{{model.images.standard_resolution.url}}"><img src="{{image}}" /></a></div>',
+        
           after: function() {
              // disable button if no more results to load
              if (!this.hasNext()) {
@@ -51,7 +51,7 @@ $(function() {
  // var comm = $(this.element).data('comments');
  // + '<div class="comments">' + comm + '</div>' 
 
-// CODE TO GET JSON OBJECT -  DELETE FOR PRODUCTION
+//CODE TO GET JSON OBJECT -  DELETE FOR PRODUCTION
 // var Instagram = {};
 
 // (function(){
