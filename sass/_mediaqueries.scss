@@ -3,17 +3,63 @@
    =========================================================================================================== */
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media only screen and (max-width: 980px) {
 
+    .form-container {
+      width: 100%;
+    }
+  
 } //max-width: 940px
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {     
+@media only screen and (max-width: 768px) { 
+  .mobile-nav {
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+header {
+  display: none;
+}
+.wrapper{
+  margin: 10px 0 0;
+}
+.container {
+  margin: 10px 0 0;
+  padding: 12% 0;
+  background: transparent url("../img/frame-verticle.svg") center center no-repeat;
+  background-size: contain;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+.form-container {
+  width: 95%;
+  margin-top: 8%;
+}
+input, textarea {
+  width: 70%;
+}
+
 
 } //max-width: 768px
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
-
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  .container { 
+    background: none;
+  }
+  label {
+    font-size: 1.2rem;
+  }
+  input, textarea {
+    font-size: 1.4rem;
+  }
 } //max-width: 480px
 

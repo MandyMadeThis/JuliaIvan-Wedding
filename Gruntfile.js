@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 separator: ';',
             },
             dist: {
-                src: ['js//scripts.js'],
+                src: ['js/instafeed.min.js','js/jquery.fancybox.js','js/scripts.js'],
                 dest: 'js/scripts.min.js'
             },
         },
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         // concatenate and minify scripts - prod only. **Don't forget to add scripts array in order of dependencies
         uglify: {
             build: {
-                src: ['js/scripts.js'],
+                src: ['js/instafeed.min.js','js/jquery.fancybox.js','js/scripts.js'],
                 dest: 'js/scripts.min.js'
             }
         },

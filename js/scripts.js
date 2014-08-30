@@ -1,4 +1,6 @@
 $(function() {
+
+  if ($('body').hasClass('insta-page')) {
   var loadButton = document.getElementById('load-more');
   var feed = new Instafeed({
           get: 'tagged',
@@ -26,7 +28,6 @@ $(function() {
   // calling the instafeed function
       feed.run();
 
-
      $(".fancybox").fancybox({
          afterLoad: function() {
           var img = $(this.element).data('photo');
@@ -43,7 +44,23 @@ $(function() {
                      }
          },
      });
-   
+
+   } // end of insta-page
+
+    // mobile nav
+    $('.mobile-nav ul').hide();
+
+    $('.menu-trigger').on('click', function(){
+      $('.mobile-nav ul').slideToggle(600);
+    });
+
+
+window.onresize = function(event) {
+   if($(window).width() > 769 ) {
+         $('.mobile-nav ul').hide();
+       }    
+};
+    
     
 }); // end of doc ready
 
